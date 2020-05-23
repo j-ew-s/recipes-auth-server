@@ -4,4 +4,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Users\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Recipes.AuthServer.CrossCutting\Recipes.AuthServer.CrossCutting.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Recipes.AuthServer.App.Authentication
+﻿namespace Recipes.AuthServer.App.Authentication
 {
-    class AuthorizationApp
+    public class AuthorizationApp : IAuthorizationApp
     {
     }
 }
