@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Threading.Tasks;
+using Recipes.AuthServer.CrossCutting.DTOs.Bases;
 using Recipes.AuthServer.CrossCutting.DTOs.Login;
 using Recipes.AuthServer.CrossCutting.DTOs.Sessions;
 using Recipes.AuthServer.CrossCutting.DTOs.Tokens;
@@ -18,23 +20,29 @@ namespace Recipes.AuthServer.App.Authentication
             this.tokenConfiguration = tokenConfiguration;
         }
 
-        public SessionDTO Login(LoginDTO login)
+        public async Task<ResponseDTO<SessionTokenDTO>> Login(LoginDTO login)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ResponseDTO<string>> Logout(string sessionId)
         {
             throw new System.NotImplementedException();
         }
 
-        public bool Logout(string sessionId)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public UserAuthentication Build(SessionDTO session)
+        /// <summary>
+        /// Generates a Token with Session information.
+        /// When Success a SessionTokenDTO will be produced
+        /// </summary>
+        /// <param name="session">SessionDTO</param>
+        /// <returns>SessionTokenDTO</returns>
+        private SessionTokenDTO BuildToken(SessionDTO session)
         {
             this.SetDates();
 
             var jwtToken = this.PrepareJwtToken(session);
 
-            return new UserAuthentication
+            return new SessionTokenDTO
             {
                 Token = jwtToken
             };

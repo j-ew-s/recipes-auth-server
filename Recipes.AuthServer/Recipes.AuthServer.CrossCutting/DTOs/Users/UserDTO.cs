@@ -4,7 +4,7 @@ using Recipes.AuthServer.CrossCutting.DTOs.Bases;
 
 namespace Recipes.AuthServer.CrossCutting.DTOs.Users
 {
-    public class UserDTO : BaseDTO
+    public class UserDTO
     {
         public UserDTO()
         {
