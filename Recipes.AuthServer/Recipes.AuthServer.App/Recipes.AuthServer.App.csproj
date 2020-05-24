@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Recipes.AuthServer.CrossCutting\Recipes.AuthServer.CrossCutting.csproj" />
   </ItemGroup>
 

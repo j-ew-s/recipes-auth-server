@@ -4,7 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Recipes.AuthServer.API.Configurations.Services;
-using Recipes.AuthServer.API.Configurations.Tokens;
+using Recipes.AuthServer.App.Authentication;
+using Recipes.AuthServer.CrossCutting.DTOs.Tokens;
 
 namespace Recipes.AuthServer.API
 {
@@ -25,7 +26,7 @@ namespace Recipes.AuthServer.API
 
             services.AddSingleton<ITokenConfiguration>(tokenConfig);
 
-            services.AddTransient<IAuthentication, Authentication>();
+            services.AddTransient<IAuthorizationApp, AuthorizationApp>();
 
             AddAuthenticationToServices.Configure(services, tokenConfig);
 

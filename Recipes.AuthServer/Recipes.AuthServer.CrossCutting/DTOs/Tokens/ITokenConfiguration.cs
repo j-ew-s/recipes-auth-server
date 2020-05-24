@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Recipes.AuthServer.API.Configurations.Tokens
+namespace Recipes.AuthServer.CrossCutting.DTOs.Tokens
 {
     public interface ITokenConfiguration
     {

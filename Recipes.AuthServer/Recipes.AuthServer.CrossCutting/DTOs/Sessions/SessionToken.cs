@@ -1,6 +1,4 @@
-﻿using Recipes.AuthServer.API.Models.Base;
-
-namespace Recipes.AuthServer.API.Models.Auth
+﻿namespace Recipes.AuthServer.CrossCutting.DTOs.Sessions
 {
     public class UserAuthentication
     {

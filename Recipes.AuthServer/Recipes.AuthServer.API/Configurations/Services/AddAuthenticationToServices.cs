@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
-using Recipes.AuthServer.API.Configurations.Tokens;
+using Recipes.AuthServer.CrossCutting.DTOs.Tokens;
 
 namespace Recipes.AuthServer.API.Configurations.Services
 {
