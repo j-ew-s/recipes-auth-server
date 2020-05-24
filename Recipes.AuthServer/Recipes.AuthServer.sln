@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recipes.AuthServer.API", "R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recipes.AuthServer.CrossCutting", "Recipes.AuthServer.CrossCutting\Recipes.AuthServer.CrossCutting.csproj", "{30E7C868-C0B4-43D0-894B-B9FEA23F2B43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes.AuthServer.App", "Recipes.AuthServer.App\Recipes.AuthServer.App.csproj", "{08482493-FB24-4736-A6E7-D647669558F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recipes.AuthServer.App", "Recipes.AuthServer.App\Recipes.AuthServer.App.csproj", "{08482493-FB24-4736-A6E7-D647669558F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes.AuthServer.Domain", "Recipes.AuthServer.Domain\Recipes.AuthServer.Domain.csproj", "{5DE9E369-043D-4633-98A5-599E4D17E325}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{08482493-FB24-4736-A6E7-D647669558F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08482493-FB24-4736-A6E7-D647669558F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08482493-FB24-4736-A6E7-D647669558F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE9E369-043D-4633-98A5-599E4D17E325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE9E369-043D-4633-98A5-599E4D17E325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE9E369-043D-4633-98A5-599E4D17E325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE9E369-043D-4633-98A5-599E4D17E325}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
